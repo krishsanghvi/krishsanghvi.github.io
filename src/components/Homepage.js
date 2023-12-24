@@ -5,39 +5,55 @@ import Typed from "react-typed";
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
+import ProfilePicture from '../images/2022 LinkedIn Picture.jpeg'
 
 
 
 function Homepage() {
   return (
-    <div id="home" className="intro route bg-image background">
+    
+    <div className="app-background">
         
-        <div class='anim_gradient'></div>
-        <Stack>
-          <Typography variant='h2' align='center' gutterBottom>Hi, I am Krish Sanghvi</Typography>
-          {/* <h1 className="intro-title mb-4" text-align="center"></h1> */}
-          <Typography variant='h3' align='center'>
-          {/* <p className="intro-subtitle" text-align="center"> */}
-            <span className="text-slider-items"></span>
-            <strong className="text-slider" >
-              <Typed
-                strings={[
-                  "College Student",
-                  "Computer Science Major",
-                  "Lifelong Learner"
-                ]}
-                typeSpeed={80}
-                backDelay={1100}
-                backSpeed={30}
-                loop
-              />
-            </strong>
-          {/* </p> */}
-          </Typography>
-               
-        </Stack>
-      </div>
+      
+      <Grid container spacing={4}>
+        <Grid item xs={12} md={6}>
+          <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
+            <div style={{ padding: '20px' }}> {/* Adjust padding as needed */}
+              <Typography variant='h2' align='center' gutterBottom>
+                Hi, I am Krish Sanghvi
+              </Typography>
+              <Typography variant='h3' align='center' style={{ margin: '10px 0' }}>
+                <span className="text-slider-items"></span>
+                <strong className="text-slider">
+                  <Typed
+                    strings={[
+                      "College Student",
+                      "Computer Science Major",
+                      "Lifelong Learner"
+                    ]}
+                    typeSpeed={80}
+                    backDelay={1100}
+                    backSpeed={30}
+                    loop
+                  />
+                </strong>
+              </Typography>
+            </div>
+          </div>
+        </Grid>
+        
+        <Grid item xs={12} md={6}>
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+            <img src={ProfilePicture} alt="Profile Picture" className="rounded-corners" style={{ maxWidth: '100%', height: 'auto' }}/>
+          </div>
+        </Grid>
+      </Grid>
+      
+
+
+    </div>
   );
 }
 
