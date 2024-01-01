@@ -47,7 +47,7 @@ function Navbar() {
             variant="h6"
             noWrap
             component="a"
-            href="/Home"
+            href="#/Home"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -102,7 +102,7 @@ function Navbar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                href={page}
+                href={"#/" + page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
