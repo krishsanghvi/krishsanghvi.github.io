@@ -1,5 +1,5 @@
 
-import './Homepage.css';
+//import './Experience.css';
 import * as React from "react";
 import Typed from "react-typed";
 import Box from '@mui/material/Box';
@@ -11,7 +11,7 @@ import ProfilePicture from '../media/2022 LinkedIn Picture.jpeg'
 
 
 
-function Homepage() {
+function Experience() {
   return (
     
     <div className="app-background">
@@ -22,7 +22,7 @@ function Homepage() {
           <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
             <div style={{ padding: '20px' }}> {/* Adjust padding as needed */}
               <Typography variant='h2' align='center' gutterBottom>
-                Hi, I am Krish Sanghvi
+                TESTING
               </Typography>
               <Typography variant='h3' align='center' style={{ margin: '10px 0' }}>
                 <span className="text-slider-items"></span>
@@ -44,11 +44,7 @@ function Homepage() {
           </div>
         </Grid>
         
-        <Grid item xs={12} md={6}>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-            <img src={ProfilePicture} alt="Profile Picture" className="rounded-corners" style={{ maxWidth: '100%', height: 'auto' }}/>
-          </div>
-        </Grid>
+    
       </Grid>
       
 
@@ -57,4 +53,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default Experience;
