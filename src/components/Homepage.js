@@ -22,9 +22,12 @@ function Homepage() {
           <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
             <div style={{ padding: '20px' }}> {/* Adjust padding as needed */}
               <Typography variant='h2' align='center' gutterBottom>
-                Hi, I am Krish Sanghvi
+                Hi, I'm Krish Sanghvi,
               </Typography>
-              <Typography variant='h3' align='center' style={{ margin: '10px 0' }}>
+              <Typography variant='h2' align='center' gutterBottom>
+                and I'm a ...
+              </Typography>
+              <Typography variant='h2' align='center' style={{ margin: '10px 0' }}>
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
                   <Typed
@@ -49,7 +52,18 @@ function Homepage() {
             <img src={ProfilePicture} alt="Profile Picture" className="rounded-corners" style={{ maxWidth: '100%', height: 'auto' }}/>
           </div>
         </Grid>
+        {/* <Grid item xs={12} md={8}>
+        <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
+          <Typography variant='body' align='center' gutterBottom>
+          My name is Krish Sanghvi, and I am currently a Computer Science and Engineering major and Math minor at The Ohio State University. I am passionate about programming and robotics and am interested in learning more about AI and machine learning. I am a member of AI Club and Competitive Coding Club, and have participated in numerous Hackathons. For fun, I love playing sports such as basketball, tennis, table tennis, volleyball, and pickleball.
+          </Typography>
+          
+          
+          </div>
+        </Grid> */}
       </Grid>
+      
+      
       
 
 
