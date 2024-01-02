@@ -40,15 +40,24 @@ function Navbar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#/Home"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, fontFamily: 'monospace', fontWeight: 700, letterSpacing: '.3rem', color: 'inherit', textDecoration: 'none' }}
-          >
-            KRISH
-          </Typography>
+        <Typography
+  variant="h6"
+  noWrap
+  component="a"
+  href="#/Home"
+  sx={{
+    mr: 2, 
+    fontFamily: 'monospace', 
+    fontWeight: 700, 
+    letterSpacing: '.3rem', 
+    color: 'inherit', 
+    textDecoration: 'none',
+    display: 'flex', // This ensures it's always displayed
+  }}
+>
+  KRISH
+</Typography>
+
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -81,7 +90,13 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Button
+                key={page}
+                href={"#/" + page}
+                onClick={handleCloseNavMenu}
+              >
+                {page}
+              </Button>
                 </MenuItem>
               ))}
             </Menu>

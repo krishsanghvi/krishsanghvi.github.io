@@ -8,6 +8,16 @@ import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
 import ProfilePicture from '../media/2022 LinkedIn Picture.jpeg'
+import { motion } from "framer-motion"
+
+export const MyComponent = () => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}
+  />
+)
+
 
 
 
@@ -22,10 +32,7 @@ function Homepage() {
           <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
             <div style={{ padding: '20px' }}> {/* Adjust padding as needed */}
               <Typography variant='h2' align='center' gutterBottom>
-                Hi, I'm Krish Sanghvi,
-              </Typography>
-              <Typography variant='h2' align='center' gutterBottom>
-                and I'm a ...
+                Hi, I'm Krish Sanghvi, and I'm a ...
               </Typography>
               <Typography variant='h2' align='center' style={{ margin: '10px 0' }}>
                 <span className="text-slider-items"></span>
@@ -48,9 +55,11 @@ function Homepage() {
         </Grid>
         
         <Grid item xs={12} md={6}>
-          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          
+          <motion.div animate={{ scale: 1 }} initial={{scale: .6}} whileHover={{ scale: 1.03 }} transition={{ type: "spring"}} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
             <img src={ProfilePicture} alt="Profile Picture" className="rounded-corners" style={{ maxWidth: '100%', height: 'auto' }}/>
-          </div>
+          </motion.div>
+          
         </Grid>
         {/* <Grid item xs={12} md={8}>
         <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
