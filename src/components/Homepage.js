@@ -15,8 +15,6 @@ function Homepage() {
   return (
     
     <div className="app-background">
-        
-      
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>

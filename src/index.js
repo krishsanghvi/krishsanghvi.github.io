@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import Experience from './components/Experience';
 import Resume from './components/Resume';
 import Blog from './components/Blog';
-import {HashRouter as Router, Routes, Route, Switch} from 'react-router-dom'
+import {HashRouter as Router, Routes, Route} from 'react-router-dom'
 //import { CssBaseline } from '@material-ui/core';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -30,7 +30,8 @@ root.render(
       <Route path='/Resume' element={<Resume/>} />
       <Route path='/Blog' element={<Blog/>} />
     </Routes>
-    <Footer/>
+
+  <Footer/>
         
   </Router>
  
