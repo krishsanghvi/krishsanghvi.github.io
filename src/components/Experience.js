@@ -16,11 +16,12 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { LinearProgress } from '@mui/material';
-
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+
 import Java from "../media/Logos/Java.svg"
 import C from "../media/Logos/C.svg"
+import MATLAB from "../media/Logos/MATLAB.svg"
 import Python from "../media/Logos/Python.svg"
 import Ruby from "../media/Logos/Ruby.svg"
 import SQL from "../media/Logos/SQL.svg"
@@ -28,19 +29,21 @@ import AWS from "../media/Logos/AWS.svg"
 import Ansible from "../media/Logos/Ansible.svg"
 import Tomcat from "../media/Logos/Tomcat.svg"
 import Apache from "../media/Logos/Apache.svg"
+import ReactP from "../media/Logos/React.svg"
 
+import { motion } from "framer-motion"
 
+import Project from "./Project";
 
 const cards = {
   "Java": { image: Java, proficiency: 80 },
   "C/C++": { image: C, proficiency: 80 },
-  "Python": { image: Python, proficiency: 40 },
+  "MATLAB": { image: MATLAB, proficiency: 70 },
   "Ruby on Rails": { image: Ruby, proficiency: 60 },
   "SQL": { image: SQL, proficiency: 60 },
+  "React": { image: ReactP, proficiency: 40 },
   "AWS": { image: AWS, proficiency: 40 },
   "Ansible": { image: Ansible, proficiency: 40 },
-  "Tomcat": { image: Tomcat, proficiency: 40 },
-  "Apache": { image: Apache, proficiency: 40 },
 };
 
 
@@ -68,15 +71,18 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Experience
+              Technical Skills
             </Typography>
           </Container>
         </Box>
+        
         <Container maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {Object.entries(cards).map(([language, { image, proficiency }]) => (
+              
               <Grid item key={language} xs={6} sm={4} md={3}>
+                <motion.div animate={{ scale: 1 }} initial={{scale: .8}} transition={{ type: "spring"}} whileHover={{type: "spring", scale: 1.04}}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
@@ -88,9 +94,10 @@ export default function Album() {
                       // backgroundImage: 'url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg)',
                       // backgroundSize: 'contain', // Makes sure the entire image fits inside the container
                       // backgroundRepeat: 'no-repeat',
-                       // Centers the image within the container
+                      backgroundPosition: 'center'// Centers the image within the container
                     }}
                     image={image}
+                    
             
                   />
 
@@ -104,25 +111,21 @@ export default function Album() {
             </Typography>
                   </CardContent>
                 </Card>
+                </motion.div>
               </Grid>
+              
             ))}
           </Grid>
         </Container>
 
-        <Container maxWidth="sm">
-            <Typography
-              component="h1"
-              variant="h2"
-              align="center"
-              color="text.primary"
-              gutterBottom
-            >
-              Projects
-            </Typography>
-          </Container>
+        
+        
+        <Project/>
+       
+
       </main>
       
-      {/* End footer */}
+      
     </ThemeProvider>
   );
 }
