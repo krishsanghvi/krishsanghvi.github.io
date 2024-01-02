@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-
+import { motion } from "framer-motion"
 
 const pages = ['Experience', 'Resume', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -40,24 +40,25 @@ function Navbar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        <Typography
-  variant="h6"
-  noWrap
-  component="a"
-  href="#/Home"
-  sx={{
-    mr: 2, 
-    fontFamily: 'monospace', 
-    fontWeight: 700, 
-    letterSpacing: '.3rem', 
-    color: 'inherit', 
-    textDecoration: 'none',
-    display: 'flex', // This ensures it's always displayed
-  }}
->
-  KRISH
-</Typography>
-
+        <motion.div animate={{ scale: 1 }} initial={{scale: .6}} transition={{ type: "spring"}} whileHover={{type: "spring", scale: 1.04}}>
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="#/Home"
+            sx={{
+              mr: 2, 
+              fontFamily: 'monospace', 
+              fontWeight: 700, 
+              letterSpacing: '.3rem', 
+              color: 'inherit', 
+              textDecoration: 'none',
+              display: 'flex', // This ensures it's always displayed
+            }}
+          >
+            KRISH
+          </Typography>
+        </motion.div>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -90,13 +91,15 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Button
-                key={page}
-                href={"#/" + page}
-                onClick={handleCloseNavMenu}
-              >
-                {page}
-              </Button>
+                  <motion.div animate={{ scale: 1 }} initial={{scale: .6}} transition={{ type: "spring"}} whileHover={{type: "spring", scale: 1.04}}>
+                    <Button
+                  key={page}
+                  href={"#/" + page}
+                  onClick={handleCloseNavMenu}
+                >
+                  {page}
+                </Button>
+                </motion.div>
                 </MenuItem>
               ))}
             </Menu>
@@ -104,6 +107,7 @@ function Navbar() {
 
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
+              <motion.div animate={{ scale: 1 }} initial={{scale: .6}} transition={{ type: "spring"}} whileHover={{type: "spring", scale: 1.04}}>
               <Button
                 key={page}
                 href={"#/" + page}
@@ -112,6 +116,7 @@ function Navbar() {
               >
                 {page}
               </Button>
+              </motion.div>
             ))}
           </Box>
         </Toolbar>

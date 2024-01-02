@@ -10,16 +10,6 @@ import Typography from "@mui/material/Typography";
 import ProfilePicture from '../media/2022 LinkedIn Picture.jpeg'
 import { motion } from "framer-motion"
 
-export const MyComponent = () => (
-  <motion.div
-    initial={{ opacity: 0, scale: 0.5 }}
-    animate={{ opacity: 1, scale: 1 }}
-    transition={{ duration: 0.5 }}
-  />
-)
-
-
-
 
 function Homepage() {
   return (
@@ -30,7 +20,7 @@ function Homepage() {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
-            <div style={{ padding: '20px' }}> {/* Adjust padding as needed */}
+            <motion.div animate={{ scale: 1 }} initial={{scale: .6}} transition={{ type: "spring"}} whileHover={{type: "spring", scale: 1.04}} style={{ padding: '20px' }}> {/* Adjust padding as needed */}
               <Typography variant='h2' align='center' gutterBottom>
                 Hi, I'm Krish Sanghvi, and I'm a ...
               </Typography>
@@ -50,13 +40,13 @@ function Homepage() {
                   />
                 </strong>
               </Typography>
-            </div>
+            </motion.div>
           </div>
         </Grid>
         
         <Grid item xs={12} md={6}>
           
-          <motion.div animate={{ scale: 1 }} initial={{scale: .6}} whileHover={{ scale: 1.03 }} transition={{ type: "spring"}} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
+          <motion.div animate={{ scale: 1 }} initial={{scale: .6}} transition={{ type: "spring"}} whileHover={{type: "spring", scale: 1.04}} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
             <img src={ProfilePicture} alt="Profile Picture" className="rounded-corners" style={{ maxWidth: '100%', height: 'auto' }}/>
           </motion.div>
           
