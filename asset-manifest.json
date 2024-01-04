@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.0dc49d2c.css",
-    "main.js": "/static/js/main.4ed5687a.js",
+    "main.js": "/static/js/main.9f06f7b0.js",
     "static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.pdf": "/static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.6a4936e27dd01dda3e13.pdf",
+    "static/media/CFGImage.png": "/static/media/CFGImage.67bced699a1b1ee01e0d.png",
     "static/media/Apache.svg": "/static/media/Apache.d3a1310af603d478bc6bebda8eb2c8b9.svg",
+    "static/media/TodoList.png": "/static/media/TodoList.09e1c0b65ed6e86b6102.png",
     "static/media/Krish_Sanghvi_Resume.pdf": "/static/media/Krish_Sanghvi_Resume.603005767689cca45390.pdf",
     "static/media/2022 LinkedIn Picture.jpeg": "/static/media/2022 LinkedIn Picture.e88b437bcf90e02e4694.jpeg",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -75,10 +77,10 @@
     "static/media/C.svg": "/static/media/C.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/Ansible.svg": "/static/media/Ansible.026dcf99305492efaa9d6aa117e94782.svg",
     "main.0dc49d2c.css.map": "/static/css/main.0dc49d2c.css.map",
-    "main.4ed5687a.js.map": "/static/js/main.4ed5687a.js.map"
+    "main.9f06f7b0.js.map": "/static/js/main.9f06f7b0.js.map"
   },
   "entrypoints": [
     "static/css/main.0dc49d2c.css",
-    "static/js/main.4ed5687a.js"
+    "static/js/main.9f06f7b0.js"
   ]
 }
