@@ -87,7 +87,7 @@ export default function Album() {
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
                 >
                   <CardMedia
-                    component="div"
+                    component="img"
                     sx={{
                       height: '150px', // Adjust height as needed
                       width: '150px', // Adjust width as needed
