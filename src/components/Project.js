@@ -2,16 +2,27 @@
 import './Homepage.css';
 import * as React from "react";
 import Typed from "react-typed";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Container from '@mui/material/Container';
+import {GitHub} from "@mui/icons-material";
+import LinkIcon from '@mui/icons-material/Link';
+
+
+
+import CodeForGoodPDF from "../media/Code for Good 2023 - Goodwill Columbus_ Team 3.pdf"
 
 
 
@@ -20,8 +31,10 @@ import { motion } from "framer-motion"
 
 const acord = {
   "Code For Good - Goodwill Columbus": {
-    description: "Developed a comprehensive system featuring user authentication, a dynamic course calendar, and a newsletter. Implemented secure password hashing and storage. Integrated a mentorship database, an intelligent chatbot, and an admin dashboard for real-time interactions and FAQs. Enabled Twilio push notifications, web page analytics, and event planning functionalities."
-  },
+    link: CodeForGoodPDF,
+    github: "https://github.com/krishsanghvi/krishsanghvi.github.io",
+    description: "Developed a comprehensive webapp using the MERN stack helping the Columbus Goodwill Foundation streamline communication, connections, and information sharing. Implemented secure password hashing and storage. Integrated a mentorship database, an intelligent chatbot, and an admin dashboard for real-time interactions and FAQs. Enabled Twilio push notifications, web page analytics, and event planning functionalities."
+  }, 
   "OSU Course Catalog": {
     description: "Enhanced the OSU Course Catalog system to provide an intuitive and user-friendly interface for course exploration and selection. Implemented advanced search capabilities and interactive course details."
   },
@@ -62,25 +75,37 @@ function Project() {
             </Typography>
           </Container>
         </Box>
-      <Container maxWidth="md">
-      {Object.entries(acord).map(([name, { description }]) => (
-        <Accordion>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography>{name}</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
-            <Typography>
-            { description }
-            </Typography>
-          </AccordionDetails>
-        </Accordion>
-      ))}
-        
-      </Container>
+        <Container maxWidth="md">
+      <Grid container spacing={4}> {/* Added container and spacing */}
+        {Object.entries(acord).map(([name, { link, github, description }]) => (
+          <Grid item key={name} xs={12} sm={6} md={4}>
+            <motion.div animate={{ scale: 1 }} initial={{ scale: 0.8 }} transition={{ type: "spring" }} whileHover={{ type: "spring", scale: 1.04 }}>
+              <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography gutterBottom variant="h5" component="h2" gutterBottom>
+                    {name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" gutterBottom>
+                    {description}
+                  </Typography>
+
+                  {link && (
+                    <Link href={link} color="inherit" target="_blank" rel="noopener noreferrer">
+                      <LinkIcon />
+                    </Link>
+                  )}
+                  {github && (
+                    <Link href={github} color="inherit" target="_blank" rel="noopener noreferrer" style={{ marginLeft: link ? '10px' : '0' }}>
+                      <GitHub />
+                    </Link>
+                  )}
+                </CardContent>
+              </Card>
+            </motion.div>
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
     </div>
   );
 }

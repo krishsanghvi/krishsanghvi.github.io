@@ -41,7 +41,7 @@ const cards = {
   "MATLAB": { image: MATLAB, proficiency: 70 },
   "Ruby on Rails": { image: Ruby, proficiency: 60 },
   "SQL": { image: SQL, proficiency: 60 },
-  "React": { image: ReactP, proficiency: 40 },
+  "React": { image: ReactP, proficiency: 50 },
   "AWS": { image: AWS, proficiency: 40 },
   "Ansible": { image: Ansible, proficiency: 40 },
 };
@@ -97,10 +97,7 @@ export default function Album() {
                       backgroundPosition: 'center'// Centers the image within the container
                     }}
                     image={image}
-                    
-            
                   />
-
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
                       {language}
