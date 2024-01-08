@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.0dc49d2c.css",
-    "main.js": "/static/js/main.fa1cd88b.js",
+    "main.js": "/static/js/main.c6673ac2.js",
     "static/media/OSU_Course_Catalog.png": "/static/media/OSU_Course_Catalog.c675cb6a2e2a3cf1f14c.png",
     "static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.pdf": "/static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.6a4936e27dd01dda3e13.pdf",
     "static/media/CFGImage.png": "/static/media/CFGImage.67bced699a1b1ee01e0d.png",
+    "static/media/Minestrone_Soup.jpg": "/static/media/Minestrone_Soup.c605f5fd3dcbe0254af5.jpg",
     "static/media/Apache.svg": "/static/media/Apache.d3a1310af603d478bc6bebda8eb2c8b9.svg",
     "static/media/TodoList.png": "/static/media/TodoList.09e1c0b65ed6e86b6102.png",
     "static/media/FEH_Robot.jpg": "/static/media/FEH_Robot.1aa3d3d98e8d11cf41b0.jpg",
@@ -81,10 +82,10 @@
     "static/media/C.svg": "/static/media/C.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/Ansible.svg": "/static/media/Ansible.598e842ffef306b9773f4a6d064a2e4c.svg",
     "main.0dc49d2c.css.map": "/static/css/main.0dc49d2c.css.map",
-    "main.fa1cd88b.js.map": "/static/js/main.fa1cd88b.js.map"
+    "main.c6673ac2.js.map": "/static/js/main.c6673ac2.js.map"
   },
   "entrypoints": [
     "static/css/main.0dc49d2c.css",
-    "static/js/main.fa1cd88b.js"
+    "static/js/main.c6673ac2.js"
   ]
 }
