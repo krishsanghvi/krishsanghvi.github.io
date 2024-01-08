@@ -12,13 +12,23 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+import MacAndCheese from "../media/Food Reviews/Mac&Cheese.jpg"
+
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const foodReview = {
+  imageUrl: MacAndCheese,
+  title: 'Wisconsin Mac & Cheese from Noodles World Kitchen',
+  content: "A beautiful blend of cheddar and jack and cream sauce to create a fantastic choice for ala carte. Definitely grater than your midnight microwavable Mac & Cheese. And the cheddar is sharper than your boyfriend's jawline. You'll have to do some curls after eating this. It's not Gouda, it's grate! Overall, a solid 8/10! Sorry, I didn't want these puns to be too cheesy!"
+};
+
+const sentences = foodReview.content.split('. ').filter(sentence => sentence);
 
 // TODO remove, this demo shouldn't need to reset the theme.
 const defaultTheme = createTheme();
@@ -48,40 +58,31 @@ export default function Album() {
             </Typography>
           </Container>
         </Box>
-        <Container maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="div"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                    image="https://source.unsplash.com/random?wallpapers"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
+        <Box p={4}>
+      <Paper elevation={3}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <img 
+              src={foodReview.imageUrl} 
+              alt={foodReview.title} 
+              style={{ width: '100%', height: 'auto' }}
+            />
           </Grid>
-        </Container>
+          <Grid item xs={12} md={6}>
+            <Box p={2}>
+              <Typography align="center" variant="h5" gutterBottom>
+                {foodReview.title}
+              </Typography>
+              {sentences.map((sentence, index) => (
+                <Typography align="center" key={index} variant="body1" style={{ marginBottom: '0.5rem' }}>
+                  {sentence.trim()}.{index < sentences.length - 1 && <br />}
+                </Typography>
+              ))}
+            </Box>
+          </Grid>
+        </Grid>
+      </Paper>
+    </Box>
       </main>
       
       {/* End footer */}

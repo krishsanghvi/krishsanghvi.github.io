@@ -26,6 +26,10 @@ import LinkIcon from '@mui/icons-material/Link';
 import CodeForGoodPDF from "../media/Project/Code for Good 2023 - Goodwill Columbus_ Team 3.pdf"
 import TodoList from "../media/Project/TodoList.png"
 import CFGImage from "../media/Project/CFGImage.png"
+import OSUCourseCatalog from "../media/Project/OSU_Course_Catalog.png"
+import Pinball from "../media/Project/Pinball.png"
+import FEHRobot from "../media/Project/FEH_Robot.jpg"
+
 
 
 import { motion } from "framer-motion"
@@ -38,6 +42,7 @@ const acord = {
     description: "Developed a comprehensive webapp using the MERN stack helping the Columbus Goodwill Foundation streamline communication, connections, and information sharing. Implemented secure password hashing and storage. Integrated a mentorship database, an intelligent chatbot, and an admin dashboard for real-time interactions and FAQs. Enabled Twilio push notifications, web page analytics, and event planning functionalities."
   }, 
   "OSU Course Catalog": {
+    image: OSUCourseCatalog,
     description: "Enhanced the OSU Course Catalog system to provide an intuitive and user-friendly interface for course exploration and selection. Implemented advanced search capabilities and interactive course details."
   },
   "Personal Website": {
@@ -45,9 +50,12 @@ const acord = {
     github: "https://github.com/krishsanghvi/krishsanghvi.github.io"
   },
   "Pinball Game": {
+    image: Pinball,
     description: "Programmed an engaging Pinball Game in C, integrating 2D motion physics, interactive graphics, and efficient input/output file handling for a seamless gaming experience."
   },
   "FEH Robot": {
+    image: FEHRobot,
+    link: "https://u.osu.edu/feh22c5/",
     description: "Engineered an autonomous robot using C++, designed to navigate and complete tasks on a challenging multifaceted course. The project showcased my skills in robotics and autonomous systems."
   },
   "To-Do List with Database": {
@@ -105,10 +113,10 @@ function Project() {
                     alt={name}
                   />
                   )}
-                  {link && (
+                  {link && (                
                     <Link href={link} color="inherit" target="_blank" rel="noopener noreferrer">
                       <LinkIcon />
-                    </Link>
+                    </Link>         
                   )}
                   {github && (
                     <Link href={github} color="inherit" target="_blank" rel="noopener noreferrer" style={{ marginLeft: link ? '10px' : '0' }}>
