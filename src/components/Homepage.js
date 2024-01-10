@@ -11,6 +11,7 @@ import ProfilePicture from '../media/2022 LinkedIn Picture.jpeg'
 import { motion } from "framer-motion"
 
 
+
 function Homepage() {
   return (
     
@@ -49,16 +50,8 @@ function Homepage() {
           </motion.div>
           
         </Grid>
-        {/* <Grid item xs={12} md={8}>
-        <div style={{ display: 'flex', alignItems: 'center', height: '100%', justifyContent: 'center' }}>
-          <Typography variant='body' align='center' gutterBottom>
-          My name is Krish Sanghvi, and I am currently a Computer Science and Engineering major and Math minor at The Ohio State University. I am passionate about programming and robotics and am interested in learning more about AI and machine learning. I am a member of AI Club and Competitive Coding Club, and have participated in numerous Hackathons. For fun, I love playing sports such as basketball, tennis, table tennis, volleyball, and pickleball.
-          </Typography>
-          
-          
-          </div>
-        </Grid> */}
       </Grid>
+
       
       
       
