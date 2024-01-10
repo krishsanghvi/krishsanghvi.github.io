@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0dc49d2c.css",
-    "main.js": "/static/js/main.c6673ac2.js",
+    "main.js": "/static/js/main.e7a4b6f9.js",
     "static/media/OSU_Course_Catalog.png": "/static/media/OSU_Course_Catalog.c675cb6a2e2a3cf1f14c.png",
     "static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.pdf": "/static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.6a4936e27dd01dda3e13.pdf",
     "static/media/CFGImage.png": "/static/media/CFGImage.67bced699a1b1ee01e0d.png",
@@ -11,8 +11,10 @@
     "static/media/FEH_Robot.jpg": "/static/media/FEH_Robot.1aa3d3d98e8d11cf41b0.jpg",
     "static/media/Mac&Cheese.jpg": "/static/media/Mac&Cheese.48bd4fec62e761d8374e.jpg",
     "static/media/Krish_Sanghvi_Resume.pdf": "/static/media/Krish_Sanghvi_Resume.603005767689cca45390.pdf",
+    "static/media/OSU.png": "/static/media/OSU.4cc7f1f499fab180b9a9.png",
     "static/media/Pinball.png": "/static/media/Pinball.ccae64b2497cb0b7917f.png",
     "static/media/2022 LinkedIn Picture.jpeg": "/static/media/2022 LinkedIn Picture.e88b437bcf90e02e4694.jpeg",
+    "static/media/Snap-onSBS_Logo-01.png": "/static/media/Snap-onSBS_Logo-01.7376ec9fabd2e76aa9dd.png",
     "static/media/roboto-latin-500-normal.woff2": "/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -82,10 +84,10 @@
     "static/media/C.svg": "/static/media/C.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/Ansible.svg": "/static/media/Ansible.598e842ffef306b9773f4a6d064a2e4c.svg",
     "main.0dc49d2c.css.map": "/static/css/main.0dc49d2c.css.map",
-    "main.c6673ac2.js.map": "/static/js/main.c6673ac2.js.map"
+    "main.e7a4b6f9.js.map": "/static/js/main.e7a4b6f9.js.map"
   },
   "entrypoints": [
     "static/css/main.0dc49d2c.css",
-    "static/js/main.c6673ac2.js"
+    "static/js/main.e7a4b6f9.js"
   ]
 }
