@@ -20,8 +20,9 @@ import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import MacAndCheese from "../media/Food Reviews/Mac&Cheese.jpg"
-
 import Minestrone_Soup from "../media/Food Reviews/Minestrone_Soup.jpg"
+import Brassica from "../media/Food Reviews/Brassica.jpg"
+import Samosa from "../media/Food Reviews/Samosa.jpeg"
 
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -33,6 +34,14 @@ const foodReviews = {
   "Mom's Magnificent Minestrone Soup": {
     image: Minestrone_Soup, 
     content: "A savory broth brewed with onions, carrots, zucchini, tomatoes, green beans, kidney beans, and shelled pasta, topped with a sprinkle of mozzarella cheese. It absouplutely destroys Olive Garden's version by a soup-slide, making it a soup-pendous choice! It's my soup-er star! This soup takes my broth away! 10/10! "
+  },
+  "Falafel Sandwich from Brassica": {
+    image: Brassica, 
+    content: "Delicious Falafel, pickled veggies, and feta cheese loaded in pulchritudinous pita bread! The color of this dish definitely popped as each element brought in a unique texture and flavor. The falafel was perfectly constructed: a brown crumble on the outside and green squishiness on the inside. And make sure you don't overload your sandwich with too much because it will be harder to cram into your head that studying last minute for your midterm exam! Overall, a beautiful 9/10!"
+  },
+  "Suits and Saris Samosas": {
+    image: Samosa, 
+    content: "Delicately wrapped fried pastries filled with spiced potatos and peas. Perfectly paired with a side of green chutney. Fabulous finger food for an exquisite evening. Don't have a sari to match your suit, don't feel bad. We have the chutney for your samosa. Never say no to a samosa, they have fillings too."
   }
 };
 
