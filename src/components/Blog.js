@@ -77,38 +77,38 @@ export default function Album() {
             </Typography>
           </Container>
         </Box>
-        <Box p={8}>
-          {Object.entries(foodReviews).map(([name, { image, content }]) => (
-            <Paper square={false} elevation={4}>
-              <Grid container spacing={4}>
+        <Container>
+          <Box py={4}>
+            {Object.entries(foodReviews).map(([name, { image, content }], index) => (
+              <Paper square={false} elevation={4} sx={{ mb: 4, overflow: 'hidden' }} key={index}>
+                <Grid container spacing={2}>
 
-                <Grid item xs={12} md={6}>
-                  <img 
-                    src={image} 
-                    alt={name} 
-                    style={{ width: '100%', height: 'auto' }}
-                  />
+                  <Grid item xs={12} sm={6}>
+                    <img 
+                      src={image} 
+                      alt={name} 
+                      style={{ width: '100%', height: 'auto', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+                    />
+                  </Grid>
+                  <Grid item xs={12} sm={6}>
+                    <Box p={2}>
+                      <Typography align="center" variant="h5" gutterBottom sx={{ marginBottom: 2 }}>
+                        {name}
+                      </Typography>
+                      {splitIntoSentences(content).map((sentence, sentenceIndex) => (
+                      <Typography align="center" key={sentenceIndex} variant="body1" sx={{ marginBottom: 2 }}>
+                        {sentence.trim()}
+                      </Typography>
+                      ))}
+                     
+                    </Box>
+                  </Grid>
                 </Grid>
-                <Grid item xs={12} md={6}>
-                  <Box p={1}>
-                    <Typography align="center" variant="h5" gutterBottom sx={{ marginBottom: 4 }}>
-                      {name}
-                    </Typography>
-                    {splitIntoSentences(content).map((sentence, index) => (
-                    <Typography align="center" key={index} variant="body1" sx={{ marginBottom: 4 }}>
-                      {sentence.trim()}
-                    </Typography>
-                  ))}
-                   
-                  </Box>
-                </Grid>
-              </Grid>
-            </Paper>
-          ))}
-        </Box>
+              </Paper>
+            ))}
+          </Box>
+        </Container>
       </main>
-      
-      {/* End footer */}
     </ThemeProvider>
   );
 }
