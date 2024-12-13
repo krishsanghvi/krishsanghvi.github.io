@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0dc49d2c.css",
-    "main.js": "/static/js/main.0e3fd5d9.js",
+    "main.js": "/static/js/main.9a67b97d.js",
     "static/media/OSU_Course_Catalog.png": "/static/media/OSU_Course_Catalog.c675cb6a2e2a3cf1f14c.png",
     "static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.pdf": "/static/media/Code for Good 2023 - Goodwill Columbus_ Team 3.6a4936e27dd01dda3e13.pdf",
     "static/media/CFGImage.png": "/static/media/CFGImage.67bced699a1b1ee01e0d.png",
+    "static/media/Zorch Pizza.jpg": "/static/media/Zorch Pizza.037779fe16538d3917ad.jpg",
     "static/media/Minestrone_Soup.jpg": "/static/media/Minestrone_Soup.c605f5fd3dcbe0254af5.jpg",
     "static/media/Apache.svg": "/static/media/Apache.d3a1310af603d478bc6bebda8eb2c8b9.svg",
     "static/media/TodoList.png": "/static/media/TodoList.09e1c0b65ed6e86b6102.png",
     "static/media/Brassica.jpg": "/static/media/Brassica.e27ace17ff3dc77fb060.jpg",
     "static/media/FEH_Robot.jpg": "/static/media/FEH_Robot.1aa3d3d98e8d11cf41b0.jpg",
+    "static/media/MakeOHIO.jpg": "/static/media/MakeOHIO.75c0ced2957194e19d53.jpg",
     "static/media/Mac&Cheese.jpg": "/static/media/Mac&Cheese.48bd4fec62e761d8374e.jpg",
-    "static/media/Krish_Sanghvi_Resume.pdf": "/static/media/Krish_Sanghvi_Resume.603005767689cca45390.pdf",
+    "static/media/Krish_Sanghvi_Resume.pdf": "/static/media/Krish_Sanghvi_Resume.08e12216985df2639a08.pdf",
     "static/media/OSU.png": "/static/media/OSU.4cc7f1f499fab180b9a9.png",
     "static/media/Pinball.png": "/static/media/Pinball.ccae64b2497cb0b7917f.png",
     "static/media/2022 LinkedIn Picture.jpeg": "/static/media/2022 LinkedIn Picture.e88b437bcf90e02e4694.jpeg",
@@ -66,6 +68,7 @@
     "static/media/roboto-vietnamese-500-normal.woff": "/static/media/roboto-vietnamese-500-normal.657896dad292ee9a0a0a.woff",
     "static/media/roboto-vietnamese-700-normal.woff": "/static/media/roboto-vietnamese-700-normal.4df79f684fcbca8386bd.woff",
     "static/media/Tomcat.svg": "/static/media/Tomcat.fe6561aac7da72c022805030d7874319.svg",
+    "static/media/Linux.svg": "/static/media/Linux.cf0b22ddf9a0a18aef959e42b6285d7e.svg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/Java.svg": "/static/media/Java.f898d8953c88033f5f7724e50a46fffb.svg",
     "static/media/SQL.svg": "/static/media/SQL.ce52b3c0a7386f304df48a56071c39f4.svg",
@@ -82,14 +85,15 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "static/media/AWS.svg": "/static/media/AWS.aa0c419475f29a34e9851194c21b72aa.svg",
+    "static/media/Kotlin.svg": "/static/media/Kotlin.3be6a9496260ac0f2ba604267372a6fe.svg",
     "index.html": "/index.html",
     "static/media/C.svg": "/static/media/C.13f24c473f4fd7f944b1410cc8058a89.svg",
     "static/media/Ansible.svg": "/static/media/Ansible.598e842ffef306b9773f4a6d064a2e4c.svg",
     "main.0dc49d2c.css.map": "/static/css/main.0dc49d2c.css.map",
-    "main.0e3fd5d9.js.map": "/static/js/main.0e3fd5d9.js.map"
+    "main.9a67b97d.js.map": "/static/js/main.9a67b97d.js.map"
   },
   "entrypoints": [
     "static/css/main.0dc49d2c.css",
-    "static/js/main.0e3fd5d9.js"
+    "static/js/main.9a67b97d.js"
   ]
 }
