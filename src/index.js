@@ -18,11 +18,8 @@ import '@fontsource/roboto/700.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-  
   <Router>
-        
   <Navbar/>
-    
     <Routes>
       <Route path='/' element={<Homepage/>}/>
       <Route path='/Home' element={<Homepage/>}/>
@@ -30,9 +27,7 @@ root.render(
       <Route path='/Resume' element={<Resume/>} />
       <Route path='/Blog' element={<Blog/>} />
     </Routes>
-
   <Footer/>
-        
   </Router>
  
   </>    

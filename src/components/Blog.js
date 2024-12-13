@@ -23,10 +23,16 @@ import MacAndCheese from "../media/Food Reviews/Mac&Cheese.jpg"
 import Minestrone_Soup from "../media/Food Reviews/Minestrone_Soup.jpg"
 import Brassica from "../media/Food Reviews/Brassica.jpg"
 import Samosa from "../media/Food Reviews/Samosa.jpeg"
+import Zorch from "../media/Food Reviews/Zorch Pizza.jpg"
+
 
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const foodReviews = {
+  "Upside Down Pizza from Zorch Pizza in Richmond, VA": { 
+    image: Zorch,
+    content: "This review is on a knead-to-know basis. Zorch Pizza in Richmond has got pizza by the slice, and 2 is more than enough to suffice. The Cheese pizza is great, yet the Upside Down pizza is worth the wait. The latter will make your pizza expectations shatter. The sauce is creamy and the crust is thin. No way your face cannot have a grin. Only a weirdough won't like these pizzas. Overall, a splendid 9.5/10! If you're not enjoying these pizza puns, you must be laughtose intolerant."
+  },
   "Wisconsin Mac & Cheese from Noodles World Kitchen": { 
     image: MacAndCheese,
     content: "A beautiful blend of cheddar and jack and cream sauce to create a fantastic choice for ala carte. Definitely grater than your midnight microwavable Mac & Cheese. And the cheddar is sharper than your boyfriend's jawline. You'll have to do some curls after eating this. It's not Gouda, it's grate! Overall, a solid 8/10! Sorry, I didn't want these puns to be too cheesy!"

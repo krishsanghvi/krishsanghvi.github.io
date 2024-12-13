@@ -29,6 +29,7 @@ import CFGImage from "../media/Project/CFGImage.png"
 import OSUCourseCatalog from "../media/Project/OSU_Course_Catalog.png"
 import Pinball from "../media/Project/Pinball.png"
 import FEHRobot from "../media/Project/FEH_Robot.jpg"
+import MakeOHIO from "../media/Project/MakeOHIO.jpg"
 
 
 
@@ -36,10 +37,16 @@ import { motion } from "framer-motion"
 
 
 const acord = {
-  "Code For Good - Goodwill Columbus": {
+  
+  "MakeOHI/O Hackathon - 2nd Place Award": {
+    image: MakeOHIO,
+    github: "https://github.com/krishsanghvi/MakeOhio2024",
+    description: "Enhanced home security systems by developing NotifI, an AI-powered webapp with facial recognition, real-time alerts, and an emergency Chatbot, offering advanced security features beyond traditional systems."
+  },
+  "J.P. Morgan Chase Code For Good Hackathon - 1st Place Award": {
     image: CFGImage,
     link: CodeForGoodPDF,
-    description: "Developed a comprehensive webapp using the MERN stack helping the Columbus Goodwill Foundation streamline communication, connections, and information sharing. Implemented secure password hashing and storage. Integrated a mentorship database, an intelligent chatbot, and an admin dashboard for real-time interactions and FAQs. Enabled Twilio push notifications, web page analytics, and event planning functionalities."
+    description: "Enhanced Columbus Goodwill Foundation's operations by developing a MERN stack webapp, incorporating secure login, mentorship database, Chatbot, admin dashboard, Twilio notifications, and event analytics to improve overall efficiency."
   }, 
   "OSU Course Catalog": {
     image: OSUCourseCatalog,

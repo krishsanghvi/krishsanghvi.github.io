@@ -28,7 +28,7 @@ import Raasinthe614 from "../media/Timeline/Raas_in_the_614.jpg"
 import DiscoveryLab from "../media/Timeline/Discovery_Lab.jpg"
 import Snapon from "../media/Timeline/Snap-onSBS_Logo-01.png"
 import STEMstangs from "../media/Timeline/STEMstangs.jpg"
-
+import CapTech from "../media/Timeline/CapTech Logo.png"
 import Project from "./Project";
 import Skills from "./Skills";
 
@@ -102,7 +102,7 @@ import Skills from "./Skills";
         }
         },
         {
-          title: "December 2022 - ",
+          title: "December 2022 - May 2024",
           cardTitle: "Snap-on Business Solutions",
           url: "https://sbs.snapon.com/",
           cardSubtitle: "Information Technology Intern and Web Systems Intern",
@@ -113,6 +113,19 @@ import Skills from "./Skills";
               url: Snapon
             }
           }
+          },
+          {
+            title: "May 2024 - August 2024",
+            cardTitle: "CapTech Consulting",
+            url: "https://www.captechconsulting.com/",
+            cardSubtitle: "Software Engineering Consultant Intern ",
+            cardDetailedText: "Created a fully functional airline website allowing customers to book and search for flights using React, Spring Boot, and AWS RDS with MySQL. Enhanced user experience and reduced customer support workload by developing a chatbot, using AWS Bedrock to answer FAQs about flights, itineraries, and membership details. Improved communication efficiency and customer satisfaction by implementing AWS Simple Email Service and designing email templates to deliver confirmation, check-in, and flight cancellation emails. Optimized project delivery by improving personal and consulting skills, ensuring effective communication with clients and team members throughout the project.",   
+            media: {
+              type: "IMAGE",
+              source: {
+                url: CapTech
+              }
+            }
           },
 ];
 

@@ -30,6 +30,8 @@ import Ansible from "../media/Logos/Ansible.svg"
 import Tomcat from "../media/Logos/Tomcat.svg"
 import Apache from "../media/Logos/Apache.svg"
 import ReactP from "../media/Logos/React.svg"
+import Linux from "../media/Logos/Linux.svg"
+import Kotlin from "../media/Logos/Kotlin.svg"
 
 import { motion } from "framer-motion"
 
@@ -37,13 +39,17 @@ import Project from "./Project";
 
 const cards = {
   "Java": { image: Java, proficiency: 80 },
+  "React": { image: ReactP, proficiency: 80 },
+  //"MATLAB": { image: MATLAB, proficiency: 70 },
+  "Python": { image: Python, proficiency: 70 },
   "C/C++": { image: C, proficiency: 80 },
-  "MATLAB": { image: MATLAB, proficiency: 70 },
-  "Ruby on Rails": { image: Ruby, proficiency: 60 },
+  //"Ruby on Rails": { image: Ruby, proficiency: 60 },
+  "AWS": { image: AWS, proficiency: 60 },
   "SQL": { image: SQL, proficiency: 60 },
-  "React": { image: ReactP, proficiency: 50 },
-  "AWS": { image: AWS, proficiency: 40 },
-  "Ansible": { image: Ansible, proficiency: 40 },
+  "Linux": { image: Linux, proficiency: 60 },
+  "Kotlin": { image: Kotlin, proficiency: 50 },
+
+  //"Ansible": { image: Ansible, proficiency: 40 },
 };
 
 
